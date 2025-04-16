@@ -62,7 +62,7 @@
               trap "pg_ctl stop" EXIT
 
             # Phoenix-specific tools
-            mix archive.install hex phx_new
+            mix archive.install hex phx_new --force
             mix local.rebar --force
             mix local.hex --force
 
