@@ -16,10 +16,10 @@
                 devShells.default = pkgs.mkShell {
                     name = "go-dev-shell";
 
-                    buildInputs = [
-                        pkgs.go
-                        pkgs.gopls
-                        pkgs.go-tools
+                    buildInputs = with pkgs; [
+                        go
+                        gopls
+                        go-tools
                     ];
 
                     shellHook = ''
